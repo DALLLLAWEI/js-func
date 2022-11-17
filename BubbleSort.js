@@ -1,5 +1,3 @@
-
-
 var bubbleSort = function(array) {
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array.length - 1; j++) {
@@ -9,11 +7,8 @@ var bubbleSort = function(array) {
             }
         }
     }
-    // console.
-    console.log(typeof array,array,);
     return array
 }
-
 
 var ensure = function(condition, error) {
     if (condition) {
@@ -22,7 +17,6 @@ var ensure = function(condition, error) {
         console.log(error);
     }
 }
-
 
 var test = function() {
     ensure(bubbleSort([1,3,2,5,32,13,32]).toString() === [1,2,3,5,13,32,32].toString(), '错误')
